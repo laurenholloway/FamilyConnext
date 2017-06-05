@@ -1,0 +1,50 @@
+﻿@model FamilyConnext.Models.Connection
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Connection</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ConnectionDescription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ConnectionDescription)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PointsAwarded)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PointsAwarded)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FamilyID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FamilyID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Member.MemberName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Member.MemberName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ConnectionID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

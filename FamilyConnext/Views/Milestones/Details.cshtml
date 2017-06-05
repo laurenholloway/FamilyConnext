@@ -1,0 +1,42 @@
+﻿@model FamilyConnext.Models.Milestone
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Milestone</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.MilestoneName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MilestoneName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PointsNeeded)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PointsNeeded)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FamilyID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FamilyID)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.MilestoneID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
